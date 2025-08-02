@@ -1,12 +1,4 @@
 / {
-    macros {
-        grave_macro: grave_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp GRAVE &kp SPACE>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,7 +35,7 @@
             bindings = <
                 &kp F1    &kp F2     &kp F3  &kp F4  &kp F5  &kp F6
                 &kp DE_A  &kp DE_SS  &none   &none   &none   &none
-                &kp DE_U  &kp UNDER  &none   &none   &none   &grave_macro
+                &kp DE_U  &kp UNDER  &none   &none   &none   &GRAVE
                 &none     &none      &none   &trans  &trans  &trans
 
 
