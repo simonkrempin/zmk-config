@@ -18,12 +18,12 @@
                 &kp ESC  &kp F  &kp W  &kp B      &kp B       &none
                 &kp TAB  &kp A  &kp S  &kp T      &kp E       &kp SEMI
                 &none    &kp U  &kp L  &kp D      &kp C       &none
-                                       &kp ENTER  &kp LSHIFT  &mo 1
+                                       &kp ENTER  &sk LSHIFT  &sl 1
 
                 &none    &kp K  &kp Y  &kp Z      &kp X       &none
                 &kp Q    &kp N  &kp I  &kp R      &kp O       &kp BACKSPACE
                 &none    &kp H  &kp M  &kp G      &kp P       &none
-                                       &mo 2      &kp SPACE   &kp LCTRL
+                                       &sl 2      &kp SPACE   &sk LCTRL
             >;
         };
 
