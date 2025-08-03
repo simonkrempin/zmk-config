@@ -2,6 +2,37 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        shift_left: shift_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp HOME>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        
+        shift_up: shift_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp PAGE_UP>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        shift_down: shift_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp PAGE_DOWN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        shift_right: shift_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp END>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,7 +59,7 @@
 
 
                 &kp N6       &kp N7               &kp N8                &kp N9                    &kp N0               &none
-                &kp AMPS     &kp_shift LEFT HOME  &kp_shift UP PAGE_UP  &kp_shift DOWN PAGE_DOWN  &kp_shift RIGHT END  &kp DEL
+                &kp AMPS     &shift_left  &shift_up  &shift_down  &shift_right  &kp DEL
                 &kp CARET    &kp DOT              &kp COMMA             &kp EQUAL                 &none                &none
                 &none        &none                &none                 &trans                    &trans               &trans
             >;
