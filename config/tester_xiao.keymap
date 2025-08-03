@@ -38,7 +38,7 @@
             bindings = <
                 &kp F1    &kp F2     &kp F3  &kp F4  &kp F5  &kp F6
                 &none  &none  &none   &none   &none   &none
-                &none  &kp UNDER  &none   &none   &none   &GRAVE
+                &none  &kp UNDER  &none   &none   &none   &kp GRAVE
                 &none     &none      &none   &trans  &trans  &trans
 
 
